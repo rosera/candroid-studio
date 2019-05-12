@@ -1,6 +1,6 @@
 # Android Studio - Docker Image
 FROM gradle:4.10.0-jdk8
-MAINTAINER rosera askrichardrose@gmail.com
+MAINTAINER Rich Rose askrichardrose@gmail.com
 
 USER root
 
