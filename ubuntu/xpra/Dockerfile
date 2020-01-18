@@ -28,4 +28,4 @@ VOLUME /data
 EXPOSE 8081
 
 # CMD to execute
-CMD xpra start --bind-tcp=0.0.0.0:8081 --html=on --exit-with-children --daemon=no --xvfb="/usr/bin/Xvfb +extension  Composite -screen 0 1920x1080x24+32 -nolisten tcp -noreset" --pulseaudio=no --notifications=no --bell=no --start-child=ascode.sh
+CMD xpra start --bind-tcp=0.0.0.0:8081 --html=on --exit-with-children --daemon=no --xvfb="/usr/bin/Xvfb +extension  Composite -screen 0 1920x1080x16+24 -nolisten tcp -noreset" --pulseaudio=no --notifications=no --bell=no --microphone=no --bandwidth-limit=10M --desktop-scaling=off --video-scaling=off --opengl=yes --dpi=96 --swap-keys=no --encoding=rgb --env "LC_ALL=en_US.UTF-8" --start-env="LC_ALL=en_US.UTF-8" --start-child=ascode.sh
